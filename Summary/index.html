@@ -21,20 +21,23 @@
     />
   </head>
   <body>
-    <header>
+    <div class="menu-wrap">
       <input type="checkbox" class="toggler" />
       <div class="hamburger"><div></div></div>
       <div class="menu">
         <div>
-          <ul>
-            <li><a href="#">Home</a></li>
-            <li><a href="#">About</a></li>
-            <li><a href="#">Services</a></li>
-            <li><a href="#">Contact</a></li>
-          </ul>
+          <div>
+            <ul>
+              <li><a href="#about">About</a></li>
+              <li><a href="#skills">Skills</a></li>
+              <li><a href="#certificate">Certificate</a></li>
+              <li><a href="#projects">Projects</a></li>
+              <li><a href="#contact">Contacts</a></li>
+            </ul>
+          </div>
         </div>
       </div>
-    </header>
+    </div>
     <main>
       <section class="greeting-section">
         <img
@@ -49,7 +52,7 @@
       </section>
       <section class="experience-section">
         <div class="experience-section_blocks">
-          <div class="experience-section_about">
+          <div id="about" class="experience-section_about">
             <div class="experience-section_photo">
               <img src="./assets/img/my-photo.PNG" alt="photo" class="photo" />
               <h2>HI THERE</h2>
@@ -67,11 +70,15 @@
               </p>
             </div>
           </div>
-          <div class="experience-section_competence">
+          <div id="skills" class="experience-section_competence">
             <h2 class="title">Knowledge and skills</h2>
             <div class="experience-section_block first">
               <div class="experience-section_image">
-                <img src="./assets/img/soft-skills.png" alt="soft-skills" class="images"/>
+                <img
+                  src="./assets/img/soft-skills.png"
+                  alt="soft-skills"
+                  class="images"
+                />
               </div>
               <div class="experience-section_skills">
                 <h3>Skills</h3>
@@ -80,16 +87,12 @@
                   <li>GitHub</li>
                   <li>HTML</li>
                   <li>CSS</li>
-                  <li>SASS/SCSS</li>
                   <li>JavaScript</li>
-                  <li>TypeScript</li>
-                  <li>Node.js</li>
                   <li>React</li>
                 </ul>
               </div>
             </div>
             <div class="experience-section_block second">
-              
               <div class="experience-section_strengths">
                 <h3>My strengths</h3>
                 <ul>
@@ -101,12 +104,20 @@
                 </ul>
               </div>
               <div class="experience-section_image">
-                <img src="./assets/img/strengths.png" alt="strengths" class="images"/>
+                <img
+                  src="./assets/img/strengths.png"
+                  alt="strengths"
+                  class="images"
+                />
               </div>
             </div>
             <div class="experience-section_block third">
               <div class="experience-section_image">
-                <img src="./assets/img/languages.png" alt="languages" class="images" />
+                <img
+                  src="./assets/img/languages.png"
+                  alt="languages"
+                  class="images"
+                />
               </div>
               <div class="experience-section_languages">
                 <h3>Languages</h3>
@@ -117,11 +128,8 @@
                 </ul>
               </div>
             </div>
-            
-           
-            
           </div>
-          <div class="experience-section_certification">
+          <div id="certificate" class="experience-section_certification">
             <h2 class="title">My certificates</h2>
             <div class="experience-section_certificates">
               <a
@@ -155,21 +163,20 @@
       </section>
       <section id="projects" class="projects-section">
         <h2 class="title">These are some of my projects</h2>
-
         <div class="projects-grid">
           <a
-            href="https://rolling-scopes-school.github.io/alexey-obraztsov-JSFEPRESCHOOL/portfolio/"
+            href="https://alexey-obraztsov.github.io/todo-list/"
             target="_blank"
             class="project project-tile"
           >
             <img
               class="project-image"
-              src="./assets/img/portfolio.PNG"
+              src="./assets/img/react.png"
               alt="project"
             />
             <p class="project-title">
               <span class="code">&lt;</span>
-              Portfolio
+              TODO on React
               <span class="code">&#47;&gt;</span>
             </p>
           </a>
@@ -217,7 +224,7 @@
             />
             <p class="project-title">
               <span class="code">&lt;</span>
-              Mem slider
+              Mem slider on CSS
               <span class="code">&#47;&gt;</span>
             </p>
           </a>
@@ -238,23 +245,22 @@
             </p>
           </a>
           <a
-            href="https://rolling-scopes-school.github.io/alexey-obraztsov-JSFEPRESCHOOL/random-jokes/"
+            href="https://rolling-scopes-school.github.io/alexey-obraztsov-JSFEPRESCHOOL/portfolio/"
             target="_blank"
             class="project project-tile"
           >
             <img
               class="project-image"
-              src="./assets/img/random-jokes.PNG"
+              src="./assets/img/portfolio.PNG"
               alt="project"
             />
             <p class="project-title">
               <span class="code">&lt;</span>
-              Random joke
+              Portfolio
               <span class="code">&#47;&gt;</span>
             </p>
           </a>
         </div>
-
         <a
           href="https://github.com/Alexey-Obraztsov?tab=repositories"
           class="btn btn-show-all"
@@ -262,11 +268,6 @@
           >Show all<i class="fas fa-chevron-right"></i
         ></a>
       </section>
-
-      <!-- END PROJECTS SECTION -->
-
-      <!-- START CONTACT SECTION -->
-
       <section id="contact" class="contact-section">
         <div class="contact-section_header">
           <h2>Let's work together...</h2>
@@ -292,9 +293,7 @@
             class="btn contact-details"
             ><i class="fab fa-instagram"></i> Instagram</a
           >
-          <a
-            href="https://e.mail.ru/inbox/?back=1"
-            class="btn contact-details"
+          <a href="alexlovi@mail.ru" class="btn contact-details"
             ><i class="fas fa-at"></i> Send a mail</a
           >
           <a href="tel:+375-29-593-74-73" class="btn contact-details"
@@ -303,21 +302,12 @@
         </div>
       </section>
     </main>
-    <!-- END CONTACT SECTION -->
-
-    <!-- START FOOTER SECTION -->
-
     <footer>
       <p>
-        ** This is a real portfolio. 
-        All these projects and contact details are real.
+        ** This is a real portfolio. All these projects and contact details are
+        real.
       </p>
-      <p>
-        &copy; Made by me personally
-      </p>
+      <p>&copy; Made by me personally</p>
     </footer>
-
-    <!-- END FOOTER SECTION -->
-
   </body>
 </html>
